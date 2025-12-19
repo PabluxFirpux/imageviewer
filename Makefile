@@ -4,7 +4,7 @@ SDLFLAGS = `sdl2-config --cflags --libs`
 SRC = main.o
 
 all: imageviewer
-	./imageviewer
+	./imageviewer ./gojo.ppm
 
 imageviewer: $(SRC)
 	gcc $(CFLAGS) $(SRC) -o imageviewer $(SDLFLAGS)
